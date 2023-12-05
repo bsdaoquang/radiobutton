@@ -34,15 +34,15 @@ const App = () => {
 
   return (
     <View style={[styles.container]}>
-      <RadioButtons
-        layout="horizontal"
+      {/* <RadioButtons
         title="User"
         items={items}
         placeholder="Choise"
         onChange={val => setItemSelected(val)}
-      />
+      /> */}
 
       <RadioButtons
+        title="Gender"
         layout="horizontal"
         items={[
           {label: 'Male', value: 'male'},
@@ -54,7 +54,7 @@ const App = () => {
         onChange={val => console.log(val)}
       />
 
-      {renderUserDetail(itemSelected)}
+      {/* {renderUserDetail(itemSelected)} */}
     </View>
   );
 };
